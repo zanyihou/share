@@ -59,7 +59,7 @@
 	.Recordlist a { display: block;height: 50px; line-height: 50px; padding: 0 15px; font-size: 15px;}
 	.Recordlist a span { float: right; color: #f60; font-size: 15px;}
 	.Recordlist a span i { margin-left: 5px; display: inline-block; width: 8px; height: 8px; border-right: 1px #666 solid; border-bottom: 1px #666 solid; transform: rotate(-45deg);}
-	.agentdetail { background: #fff !important; max-height: 400px; overflow: scroll;  border: 1px #eee solid; padding: 0 10px; }
+	.agentdetail { background: #fff !important; max-height: 300px; overflow: scroll;  border: 1px #eee solid; padding: 0 10px; }
 	.agentdetail p { height: 30px; line-height: 30px; border-bottom: 1px #eee solid;}
 	.agentdetail p span { margin:0 4px; color:#f60}
 	.agentdetail p i { float: right; color: #c7a28a;}
