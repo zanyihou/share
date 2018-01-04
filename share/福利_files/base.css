@@ -1,0 +1,393 @@
+﻿/*
+=============================================
+=====            公用样式开始           =====
+=============================================
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+}
+
+img {
+    border: 0px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    color: #000000;
+}
+
+.red_ball {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    border-radius: 13px;
+    background: #e4393c;
+    color: #ffffff;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 1px 0 0;
+}
+
+.blue_ball {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    border-radius: 13px;
+    background: #39c;
+    color: #ffffff;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 1px 0 0;
+}
+
+.greenball {
+    display: inline-block;
+    width: 15px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #ffffff;
+    background: #32b16c;
+}
+
+/*
+=============================================
+=====            公用样式结束           =====
+=============================================
+*/
+
+/*
+=============================================
+=====            头部样式开始           =====
+=============================================
+*/
+.header {
+    height: 44px;
+    width: 100%;
+    background: #e4393c;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 9;
+    color: #000000;
+}
+
+    .header h2 {
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .header .return {
+        position: absolute;
+        height: 44px;
+        width: 80px;
+        line-height: 44px;
+        padding: 0 0 0 22px;
+        top: 0;
+        left: 0;
+    }
+
+        .header .return a {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .header .return .retun_arrow {
+            position: absolute;
+            display: inline-block;
+            width: 11px;
+            height: 16px;
+            background: url(../images/return_arrows.png) no-repeat;
+            background-size: 100%;
+            top: 15px;
+            left: 8px;
+        }
+
+    .header .refresh { /**头部刷新按钮*/
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        width: 50px;
+        height: 44px;
+        line-height: 44px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+.home_ico {
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(/images/home_phone@2x.png) no-repeat;
+    background-size: 100%;
+    top: 10px;
+    right: 8px;
+}
+
+.header .setbut {
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+    .header .setbut a {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/set.png) no-repeat;
+        background-size: 100%;
+        margin: 10px auto;
+        text-indent: -9999px;
+    }
+
+.foot {
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 20px;
+    color: #000000;
+    padding: 16px 0 16px 0;
+}
+
+    .foot li {
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0 0 5px 0;
+        display: inline-block;
+        padding: 0 2px;
+    }
+/*
+=============================================
+=====            头部样式结束           =====
+=============================================
+*/
+
+/*
+=============================================
+=====         alert动画样式开始         =====
+=============================================
+*/
+#AlterMask {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 997;
+    background-color: black;
+    filter: alpha(Opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+
+#Alter {
+    padding: 0px 10px;
+    height: 50px;
+    line-height: 50px;
+    filter: alpha(Opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    color: #5AA7E8;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 998;
+    background: transparent url(/images/mask_bg.png) repeat scroll 0% 0%;
+}
+/*
+=============================================
+=====         alert动画样式结束         =====
+=============================================
+*/
+
+
+/*
+=============================================
+=====        loading动画样式开始        =====
+=============================================
+*/
+#LoadingMask {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 997;
+    background-color: black;
+    filter: alpha(Opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+
+#Loading {
+    width: 150px;
+    height: 70px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 998;
+    filter: alpha(Opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    background: transparent url(/images/mask_bg.png) repeat scroll 0% 0%;
+}
+
+    #Loading dl {
+        height: 70px;
+    }
+
+        #Loading dl dt {
+            float: left;
+            margin: 19px 10px 0px;
+            display: block;
+            width: 32px;
+            height: 32px;
+        }
+
+        #Loading dl dd {
+            font-size: 12px;
+            line-height: 70px;
+            color: #5AA7E8;
+        }
+/*
+=============================================
+=====        loading动画样式结束        =====
+=============================================
+*/
+
+/*
+=============================================
+=====        下拉刷新动画样式开始       =====
+=============================================
+*/
+.pullDownRefresh-up, .pullDownRefresh-down {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.pullDownRefresh-refresh, .pullDownRefresh-update, .pullDownRefresh-load {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+
+.pullDownRefresh-down .pullDownRefresh-refresh, .pullDownRefresh-down .pullDownRefresh-update, .pullDownRefresh-down .pullDownRefresh-load {
+    top: 0;
+    bottom: auto;
+}
+
+.pullDownRefresh-load .loading {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 6px;
+    border: 2px solid #666;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*
+=============================================
+=====        下拉刷新动画样式结束       =====
+=============================================
+*/
+
+.botlink { width: 100%; border-top: 1px #ddd solid; position: fixed; bottom: 0;  left: 0; height: 50px; background: #f3f0f0;z-index: 999;}
+.botlink ul li { width: 20%; display: inline-block; float: left; text-align: center;}
+.botlink ul li a {color: #666; font-size: 13px;}
+.botlink ul li a.cho {color:#e4393c;}
+.botlink ul li a h1 { height: 30px;}
+.botlink ul li a.guess h1 { background: url(../images/guess_02.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.weal h1 { background: url(../images/weal_02.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.coop h1 { background: url(../images/coop_02.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.tuser h1 { background: url(../images/user_02.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.agenter h1 { background: url(../images/agent_02.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.guess.cho h1 { background: url(../images/guess_01.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.weal.cho h1 { background: url(../images/weal_01.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.coop.cho h1 { background: url(../images/coop_01.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.tuser.cho h1 { background: url(../images/user_01.png) no-repeat center center; background-size: auto 22px;}
+.botlink ul li a.agenter.cho h1 { background: url(../images/agent_01.png) no-repeat center center; background-size: auto 22px;}
