@@ -33,7 +33,7 @@
     color: #ffffff;
 }
 	.db { display: block !important;}
-	.agent { background: url(images/agent_bg.png) no-repeat; background-size: 100% auto; position: absolute; top: 44px; bottom: 51px; width: 100%; }
+	.agent { background: url(images/agent_bg.png) no-repeat; background-size: 100% auto; position: absolute; overflow-y:scroll; top: 44px; bottom: 51px; width: 100%; }
 	.agentCnt {padding: 15px; overflow: hidden;}
 	.shareType { overflow: hidden; margin-bottom: 20px;}
 	.shareType li{ width: 33.3%; float: left;}
